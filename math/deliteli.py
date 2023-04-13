@@ -20,3 +20,15 @@ while b > 0:
     a = b
     b = c
 print(f'Нод={a}')
+
+"""
+НОК = a*b / НОД
+"""
+a, b = [int(x) for x in input().split()]
+p = a * b
+while b > 0:
+    c = a%b
+    a = b
+    b = c
+nok = p//a
+print(nok)
